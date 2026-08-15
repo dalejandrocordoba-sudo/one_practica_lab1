@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -85,13 +86,15 @@ int main(){
 }
 */
 
-// ejercicio 4
+
+
+
+// ejercicio 5
+/*
 int main(){
 
-    float A;
-    float B;
-    float resultado;
-    int final;
+    float A, B;
+    float resultado, redondeo;
 
     cout<<"Introduce el valor de A:"<<endl;
     cin>>A;
@@ -100,9 +103,119 @@ int main(){
     cin>>B;
 
     resultado=A/B;
-    final=resultado%2=;
+    redondeo=round(resultado);
 
 
-    cout<<final;
+    cout<<redondeo;
 }
+*/
+
+
+
+//ejercicio 6//
+/*
+int main(){
+
+    int A, B;
+    int resultado=1;
+
+    cout<<"Ingresa el valor para A: "<<endl; //base
+    cin>>A;
+
+    cout<<"Ingresa el valor para B: "<<endl; //exponente
+    cin>>B;
+
+    for (int i = 1; i <= B; ++i) {
+        resultado=resultado*A;
+
+
+    }
+    cout<<"el resultado es: "<<resultado<<endl;
+
+    return 0;
+}
+
+*/
+
+
+
+//ejercicio 7
+/*
+int main(){
+
+    int N; //numero entero
+    int resultado=0;
+
+    cout<<"Ingresa un numero entero: "<<endl;
+    cin>>N;
+
+    for (int i = 1; i <= N; ++i) {
+
+        resultado=resultado+i;
+
+    }
+    cout<<resultado<<endl;
+
+    return 0;
+}
+*/
+
+
+//ejercicio 8
+/*
+int main()
+{
+    int N;
+    int resultado=1;
+
+    cout<<"ingresa un Numero entero positivo: \n\n"<<endl;
+    cin>>N;
+
+    for (int i = 1; i <= N; ++i) {
+        resultado=resultado*i;
+
+
+    }
+
+
+    cout<<"el resultado es: "<<resultado<<"\n\n";
+
+
+    return 0;
+}
+*/
+
+
+
+//ejercicio 9
+
+int main()
+{
+    //variables
+    float R,area,perimetro, pi=3.1416;
+
+
+    cout<<"Ingresa el radio del circulo: \n\n"<<endl;
+    cin>>R;
+
+    //area
+    area=pi*R*R;
+
+    //perimetro
+    perimetro=2*pi*R;
+
+    cout<<"el area del circulo es: "<<area<<" su perimetro es de: "<<perimetro;
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
 
