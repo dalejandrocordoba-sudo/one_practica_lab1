@@ -4,7 +4,6 @@
 using namespace std;
 
 //ejercicio 1
-
 /*
 int main()
 {
@@ -27,10 +26,7 @@ int main()
 */
 
 
-
-
 //ejercicio 2
-
 
 /*
 int main(){
@@ -52,7 +48,6 @@ int main(){
     return 1;
 }
 */
-
 
 
 //ejercicio 3
@@ -87,9 +82,7 @@ int main(){
 */
 
 
-
-
-// ejercicio 5
+// ejercicio 5 //redondeo
 /*
 int main(){
 
@@ -109,7 +102,6 @@ int main(){
     cout<<redondeo;
 }
 */
-
 
 
 //ejercicio 6//
@@ -136,7 +128,6 @@ int main(){
 }
 
 */
-
 
 
 //ejercicio 7
@@ -188,7 +179,7 @@ int main()
 
 
 //ejercicio 9
-
+/*
 int main()
 {
     //variables
@@ -209,13 +200,101 @@ int main()
 
     return 0;
 }
+*/
+
+
+//ejercicio 10 //multiplos
+/*
+int main()
+{
+    int N=0, resultado=1;
+
+    cout<<"Ingrese un valor: "<<endl;
+    cin>>N;
+
+    for (int i = N; i < 100; ++i) {
+        resultado=i*N;
+        cout<<resultado;
+
+    }
 
 
 
+    return 0;
+}
+*/
+
+//ejercicio 11
+/*
+int main() {
+    int n;
+
+    cout << "Ingrese un número N: ";
+    cin >> n;
+
+    cout << "\nMúltiplos de " << n << " menores que 100:\n";
+
+    // Comenzamos en 'n', avanzamos sumando 'n' en cada paso mientras sea menor que 100
+    for (int i = n; i < 100; i += n) {
+        cout << i << endl;
+    }
+
+    return 0;
+}
+*/
 
 
+//**************************************************problemas **********************************************************
 
 
+//problema 2
+
+int main()
+{
+    int cantidad;
 
 
+    cout<<"ingreseel valor para hacer la combinacion: "<<endl;
+    cin>>cantidad;
 
+    if(cantidad>=50000){
+        cantidad=cantidad/50000;
+
+        cout<<"billetes de 50000: "<<round(cantidad)<<endl; //round para parte entera
+    }
+    if(cantidad>=20000){
+        cantidad=cantidad/20000;
+        cout<<"billetes de 20000: "<<round(cantidad)<<endl;
+    }
+    if(cantidad<=10000){
+        cantidad=cantidad/10000;
+        cout<<"billetes de 10000:"<<round(cantidad)<<endl;
+    }
+    if(cantidad<=5000){
+        cantidad=cantidad/5000;
+        cout<<"billetes de 5000:"<<round(cantidad)<<endl;
+    }
+    if(cantidad<=2000){
+        cantidad=cantidad/2000;
+        cout<<"billetes de 2000:"<<round(cantidad)<<endl;
+    }
+    if(cantidad<=1000){
+        cantidad=cantidad/1000;
+        cout<<"billetes de 1000:"<<round(cantidad)<<endl;
+    }
+    if(cantidad<=500){
+        cantidad=cantidad/500;
+        cout<<"modedas de 500:"<<round(cantidad)<<endl;
+    }
+    if(cantidad<=200){
+        cantidad=cantidad/200;
+        cout<<"modedas de 200:"<<round(cantidad)<<endl;
+    }
+    if(cantidad<=100){
+        cantidad=cantidad/100;
+        cout<<"modedas de 100:"<<round(cantidad)<<endl;
+    }else{cout<<"faltante: "<<cantidad<<endl;
+}
+
+ return 0;
+}
