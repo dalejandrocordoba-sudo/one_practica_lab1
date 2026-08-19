@@ -207,14 +207,14 @@ int main()
 /*
 int main()
 {
-    int N=0, resultado=1;
+    int N=0;
 
     cout<<"Ingrese un valor: "<<endl;
     cin>>N;
 
-    for (int i = N; i < 100; ++i) {
-        resultado=i*N;
-        cout<<resultado;
+    for (int i = N; i <= 100; i+=N) {
+
+        cout<<i<<endl;
 
     }
 
@@ -222,6 +222,7 @@ int main()
 
     return 0;
 }
+
 */
 
 //ejercicio 11
@@ -244,11 +245,11 @@ int main() {
 */
 
 
-//**************************************************problemas **********************************************************
+//******************************problemas************************problemas **************************problemas***************problemas*****************problemas***************************************
 
 
 //problema 2
-
+/*
 int main()
 {
     int cantidad;
@@ -257,44 +258,58 @@ int main()
     cout<<"ingreseel valor para hacer la combinacion: "<<endl;
     cin>>cantidad;
 
+//devueltas de billetes
     if(cantidad>=50000){
-        cantidad=cantidad/50000;
 
-        cout<<"billetes de 50000: "<<round(cantidad)<<endl; //round para parte entera
+        cout<<"billetes de 50000: "<<cantidad/50000<<endl;
+        cantidad=cantidad%50000;
     }
     if(cantidad>=20000){
-        cantidad=cantidad/20000;
-        cout<<"billetes de 20000: "<<round(cantidad)<<endl;
+
+        cout<<"billetes de 20000: "<<cantidad/20000<<endl;
+        cantidad=cantidad%20000;
+
     }
-    if(cantidad<=10000){
-        cantidad=cantidad/10000;
-        cout<<"billetes de 10000:"<<round(cantidad)<<endl;
+    if (cantidad>=10000){
+        cout<<"billetes de 10000: "<< cantidad/10000<<endl;
+        cantidad=cantidad%10000;
     }
-    if(cantidad<=5000){
-        cantidad=cantidad/5000;
-        cout<<"billetes de 5000:"<<round(cantidad)<<endl;
+    if(cantidad>=5000){
+        cout<<"billetes de 5000: "<<cantidad/5000<<endl;
+        cantidad=cantidad%5000;
+
     }
-    if(cantidad<=2000){
-        cantidad=cantidad/2000;
-        cout<<"billetes de 2000:"<<round(cantidad)<<endl;
-    }
-    if(cantidad<=1000){
-        cantidad=cantidad/1000;
-        cout<<"billetes de 1000:"<<round(cantidad)<<endl;
-    }
-    if(cantidad<=500){
-        cantidad=cantidad/500;
-        cout<<"modedas de 500:"<<round(cantidad)<<endl;
-    }
-    if(cantidad<=200){
-        cantidad=cantidad/200;
-        cout<<"modedas de 200:"<<round(cantidad)<<endl;
-    }
-    if(cantidad<=100){
-        cantidad=cantidad/100;
-        cout<<"modedas de 100:"<<round(cantidad)<<endl;
-    }else{cout<<"faltante: "<<cantidad<<endl;
-}
+    if(cantidad>=1000){
+        cout<<"billetes de 1000: "<<cantidad/1000<<endl;
+        cantidad=cantidad%1000;}
+
+//debueltas de monedas
+
+    if(cantidad>=500){
+        cout<<"monedas de 1000: "<<cantidad/500<<endl;
+        cantidad=cantidad%500;}
+
+    if(cantidad>=200){
+        cout<<"monedas de 200: "<<cantidad/200<<endl;
+        cantidad=cantidad%200;}
+
+    if(cantidad>=100){
+        cout<<"monedas de 100: "<<cantidad/100<<endl;
+        cantidad=cantidad%100;}
+
+    if(cantidad>=50){
+        cout<<"monedas de 50: "<<cantidad/50<<endl;
+        cantidad=cantidad%50;}
+    else
+    {cout<<"faltan: "<<cantidad<<" pesos";}
+
+
 
  return 0;
 }
+
+*/
+
+//problema 6
+
+
